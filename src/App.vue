@@ -1,17 +1,13 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="flex justify-between items-center bg-gray-700 text-sm px-8">
+    <div class="flex px-5 py-4">
+      <div class="ml-2 px-3 mobile-menu text-white">
+        <router-link to="/" class="px-2 hover:text-green-400">Clientes</router-link> |
+        <router-link to="/pagos" class="px-2 hover:text-green-400">Pagos</router-link>
+      </div>
+    </div>
   </nav>
-  <router-view/>
+  <div class="container-lg p-4 h-full bg-white font-mono">
+    <router-view />
+  </div>
 </template>
-
-<style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
-</style>
