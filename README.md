@@ -25,10 +25,11 @@ npm run test:unit
 npm run test:e2e
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
 ### Compile Tailwinds
 ```
 npx tailwindcss -i ./src/css/index.css -o ./public/dist/output.css --watch
 ```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
